@@ -4,9 +4,9 @@ import Card from '../components/Card.astro';
 import Greeting from '../components/Greeting';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Welcome to Dang Nguyen's site.">
 	<main>
-		<h1>Welcome to <span class="text-gradient">My Site</span></h1>
+		<h1>Welcome to <br /><span class="text-gradient">Dang Nguyen's Site</span></h1>
 		<Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
 
 		<p class="instructions">
@@ -58,6 +58,7 @@ import Greeting from '../components/Greeting';
 		background-color: white;
 		padding: 1rem;
 		border-radius: 0.4rem;
+		color: #111;
 	}
 	.instructions code {
 		font-size: 0.875em;

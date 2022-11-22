@@ -1,6 +1,5 @@
 {
   "name": "@example/basics",
-  "type": "module",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -8,12 +7,18 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "lint": "eslint --ext .js,.astro src"
   },
   "dependencies": {
     "@astrojs/preact": "^1.2.0",
     "@astrojs/rss": "^1.0.3",
     "astro": "^1.6.0",
     "preact": "^10.11.3"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^5.44.0",
+    "eslint": "^8.28.0",
+    "eslint-plugin-astro": "^0.21.0"
   }
 }
